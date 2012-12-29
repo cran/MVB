@@ -20,7 +20,7 @@ License: \tab GPL (>=2)\cr
 }
 \author{
 Bin Dai
-<dai at zuaa dot zju dot edu dot cn>
+<daibin at stat dot wisc dot edu>
 }
 \keyword{ Multivariate Bernoulli, lasso}
 \examples{

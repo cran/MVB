@@ -1,7 +1,7 @@
 #ifndef DEBUG_H_
 #define DEBUG_H_
 
-#include <Rcpp.h>
+//#include<Rcpp.h>
 #include <RcppArmadillo.h>
 
 namespace debug {

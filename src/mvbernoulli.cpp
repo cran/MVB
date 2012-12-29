@@ -39,7 +39,7 @@ namespace lps {
 	for (unsigned j = 0; j < numCol; j++)
 	  fx(i, j) += bi( Z(i), j);
     }   
-    eS = arma::zeros<arma::mat> (n, static_cast<int>(pow(2, K) - 1));
+    eS = arma::zeros<arma::mat> (n, static_cast<int>(pow(2., static_cast<double>(K)) - 1));
 
     for (unsigned i = 0; i < eS.n_cols; i++) {
       for (unsigned j = 0; j < linkTable[i].size(); j++)

@@ -55,7 +55,7 @@ namespace lps {
     case AIC:
       return 2 * ptrLoss -> eval(ret.first) + 2 * nonzero.n_rows / static_cast<double> (n);
     case BIC:
-      return 2 * ptrLoss -> eval(ret.first) + log(n) * nonzero.n_rows / static_cast<double> (n);
+      return 2 * ptrLoss -> eval(ret.first) + log(static_cast<double>(n)) * nonzero.n_rows / static_cast<double> (n);
     case GACV:
       {
 	double sum = 0;

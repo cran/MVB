@@ -7,7 +7,7 @@
 #include <cstdlib>
 #include <vector>
 #include <utility>
-#include <Rcpp.h> // for Rcout
+//#include <Rcpp.h> // for Rcout
 #include "gaussian.h"
 #include "binomial.h"
 #include "mvbernoulli.h"

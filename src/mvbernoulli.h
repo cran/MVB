@@ -74,7 +74,7 @@ namespace lps {
       numCol = addUp(order, K);
       augmentY();
       // construct link table
-      std::vector<std::vector<int> > link(static_cast<int>(pow(2, K)) - 1);
+      std::vector<std::vector<int> > link(static_cast<int>(pow(2., static_cast<double>(K))) - 1);
       unsigned pos = 0;
       for (unsigned i = 1; i <= K; i++) {
 	lps::comb obj(K, i);

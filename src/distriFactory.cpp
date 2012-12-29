@@ -1,4 +1,4 @@
-#include <Rcpp.h>
+//#include <Rcpp.h>
 #include "distriFactory.h"
 
 namespace lps {

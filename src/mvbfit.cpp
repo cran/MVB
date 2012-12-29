@@ -33,11 +33,11 @@ RcppExport SEXP get_eS(SEXP fx_,
     unsigned K = INTEGER(K_)[0];
 
     arma::mat fx(fxr.begin(), n, givenCol, false);
-    arma::mat eS = arma::zeros<arma::mat> (n, static_cast<int>(pow(2, K) - 1));
+    arma::mat eS = arma::zeros<arma::mat> (n, static_cast<int>(pow(2., static_cast<double>(K)) - 1));
 
     // link table used to construct eS
-    std::vector<std::vector<int> > link(static_cast<int>(pow(2, K) - 1));
-    std::vector<std::vector<int> > linkTable(static_cast<int>(pow(2, K) - 1));
+    std::vector<std::vector<int> > link(static_cast<int>(pow(2., static_cast<double>(K)) - 1));
+    std::vector<std::vector<int> > linkTable(static_cast<int>(pow(2., static_cast<double>(K)) - 1));
     unsigned pos = 0;
     for (unsigned i = 1; i <= K; i++) {
       lps::comb obj(K, i);

@@ -6,7 +6,7 @@
 #include <cstdlib>
 #include <vector>
 #include <utility>
-#include <Rcpp.h>
+//#include <Rcpp.h>
 #include "mvbernoulli.h"
 
 namespace lps {

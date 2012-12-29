@@ -56,7 +56,7 @@ unilps <- function(formula, data = list(),
   result$call <- this.call
   result$lambda <- wlambda
   result$beta <- as.matrix(result$beta)
-  dim(result$beta) <- c(nvars, dim(result$beta)[1] / nvars)
+  # dim(result$beta) <- c(nvars, dim(result$beta)[1] / nvars)
   result$optbeta <- as.vector(result$beta[,which.min(result$score)])
   class(result) <- c("mvbfit", "lps", class(result))
   result
